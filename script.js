@@ -22,8 +22,8 @@ response.then((k)=>{
             <div class="card-body">
             <h5 class="card-title">${contests[item].name}</h5>
             <p class="card-text">In 24 hours   <b> ${contests[item].in_24_hours} </b></p>
-            <p class="card-text">Starts at: ${contests[item].start_time}</p>
-            <p class="card-text">Ends at: ${contests[item].end_time}</p>
+            <p class="card-text">Starts at: ${contests[item].start_time.slice(11, 16)+"  "+contests[item].start_time.slice(0, 10)}</p>
+            <p class="card-text">Ends at: ${contests[item].end_time.slice(11, 16)+"  "+ contests[item].end_time.slice(0, 10)}</p>
             <a href="${contests[item].url}" class="btn btn-primary" target="_blank" >Visit Here</a>
             </div>
         </div>

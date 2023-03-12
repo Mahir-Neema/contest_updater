@@ -7,8 +7,9 @@ response.then((k)=>{
     text="";
     console.log(contests);
     for(item in contests){
-
-        if(contests[item].name[0]=="A") {Ilink="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1674812036~exp=1674812636~hmac=3487d888c01d9f41c60c630b85526716aec138e886f193ae9d64a19866aba3ec";}
+        if(contests[item].name.slice(0,6)=="Weekly" || contests[item].name.slice(0,8)=="Biweekly"){Ilink="https://styles.redditmedia.com/t5_3mlga/styles/communityIcon_81fgdqfsnbw91.png?width=256&s=8ae5fce8cfbc600f1a848b0f31e3d036c45057c3";}
+        else if(contests[item].name.slice(0,10)=="Codeforces"){Ilink="https://cdn.iconscout.com/icon/free/png-256/code-forces-3521352-2944796.png";}
+        else if(contests[item].name[0]=="A") {Ilink="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1674812036~exp=1674812636~hmac=3487d888c01d9f41c60c630b85526716aec138e886f193ae9d64a19866aba3ec";}
         else if(contests[item].name[0]=="B") {Ilink="https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2417.jpg?w=740&t=st=1674813780~exp=1674814380~hmac=0f13cb4fb8193eeed301a495878de4af3dc8fd1dc1e7c35daca487132e0bc065";}
         else if(contests[item].name[0]=="C") {Ilink="https://img.freepik.com/free-vector/website-creator-concept-illustration_114360-7681.jpg?w=740&t=st=1674814231~exp=1674814831~hmac=da4cb0fcf6723f4138e430b7e0702f616393f0fb62387095a2d0250ceb44a9d3";}
         else if(contests[item].name[0]=="P") {Ilink="https://img.freepik.com/free-vector/flat-design-web-developers_23-2148817994.jpg?w=740&t=st=1674813853~exp=1674814453~hmac=8539e8ebebf66d7ccbbae64053ce957b594149297dfdbd6e91bfa9cef34c9f8f";}
